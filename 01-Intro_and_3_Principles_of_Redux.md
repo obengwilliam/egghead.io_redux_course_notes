@@ -3,7 +3,7 @@
 
 The first principle of Redux (no matter the complexity):
 
-**The entire state of the application will be represented by one JavaScript object.**
+## **The entire state of the application will be represented by one JavaScript object.**
 
 All changes and mutations to the application are explicit.
 These mutations, which include the data and the UI state, are contained in a single object we call the **state**. 
@@ -13,7 +13,8 @@ Since the entire state is represented in a single object, we are able to keep tr
 # 02. Describing State Changes with Actions
 [Video Link](https://egghead.io/lessons/javascript-redux-describing-state-changes-with-actions?series=getting-started-with-redux)
 
-The second principle of Redux is that **the *state tree* is read only**.
+The second principle of Redux is that :
+## **the *state tree* is read only and can only be modified by dispatching actions**.
 Any time you want to change the state, you have to dispatch an **action**. An action is a plain JS object describing the change. Just like the state is the minimal representation of the data, the action is the minimal representation of the change to that data.
 
 The only requirement for an action is that it has a type property (conventionally a String). 
@@ -65,7 +66,9 @@ Redux compliments this approach by requiring that state mutations in your app ne
 
 Even in large applications, there is still just a single function that calculates the new state of the application. It doesn't have to be slow-- if certain parts of the state haven't changed, their references can stay as-is. In the ToDo app example, when changing the visibility between "All/Completed/Active" the actual items themselves haven't changed, so the reference to the previous version of the `todos` array is left intact.
 
-This is the 3rd and final principle of Redux: to describe state mutations you have to write a function that takes the previous state of the app and the action being dispatched, then returns the next state of the app. This function is called the **Reducer**.
+This is the 3rd and final principle of Redux: 
+## **to describe state mutations you have to write a function that takes the previous state of the app and the action being dispatched, then returns the next state of the app**.
+This function is called the **Reducer**.
 
 
 
