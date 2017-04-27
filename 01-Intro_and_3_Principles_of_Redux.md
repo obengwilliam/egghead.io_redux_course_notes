@@ -6,7 +6,7 @@ The first principle of Redux (no matter the complexity):
 ## **The entire state of the application will be represented by one JavaScript object.**
 
 All changes and mutations to the application are explicit.
-These mutations, which include the data and the UI state, are contained in a single object we call the **state** or the **state tree **
+These mutations, which include the data and the UI state, are contained in a single object we call the **state** or the **state tree**
 
 Since the entire state is represented in a single object, we are able to keep track of changes over time 
 
